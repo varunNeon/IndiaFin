@@ -1,4 +1,4 @@
-# 💹 IndiaFin — Indian Stock Market Dashboard
+# 💹 IndiaFin — Live Indian Stock Market Analytics Dashboard
 
 A live financial analytics dashboard built with Python, pulling real-time NSE stock data and visualizing trends, volatility, and market signals through an interactive web app.
 
