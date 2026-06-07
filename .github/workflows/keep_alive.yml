@@ -12,5 +12,15 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping Streamlit app
-        run: curl --silent --show-error --max-time 30 https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app > /dev/null
+      - name: Wake Streamlit app
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          APP_URL="https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app"
+          RESUME_URL="${APP_URL}/subdomain/app/resume"
+          AUTH_URL="https://share.streamlit.io/-/auth/app?redirect_uri=https%3A%2F%2Findiafin-mf9orp8gbadok3wzmxppj7.streamlit.app%2Fsubdomain%2Fapp%2Fresume"
+          COOKIE_JAR="$(mktemp)"
+
+          curl --silent --show-error --location --max-time 30 --cookie-jar "$COOKIE_JAR" --cookie "$COOKIE_JAR" "$AUTH_URL" > /dev/null
+          curl --silent --show-error --location --max-time 30 --request POST --data "" --cookie-jar "$COOKIE_JAR" --cookie "$COOKIE_JAR" "$RESUME_URL" > /dev/null
