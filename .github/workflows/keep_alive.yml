@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Streamlit app
-        run: curl --silent --show-error --location --max-time 30 https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app > /dev/null
+        run: curl --silent --show-error --max-time 30 https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app > /dev/null
