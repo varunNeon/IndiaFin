@@ -14,7 +14,6 @@ jobs:
     steps:
       - name: Ping IndiaFin
         run: |
-          curl --silent --show-error --location --max-time 60 \
-            --retry 3 --retry-delay 10 \
+          curl --location --max-time 60 \
             -o /dev/null -w "HTTP %{http_code}\n" \
-            "https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app/"
+            "https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app/" || true
