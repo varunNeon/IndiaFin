@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="40" x2="1320" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#0D1B2E"/><stop offset="1" stop-color="#050B14"/></linearGradient>
+    <linearGradient id="line" x1="830" y1="430" x2="1350" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#34D399"/><stop offset=".55" stop-color="#35C9FF"/><stop offset="1" stop-color="#8B9BFF"/></linearGradient>
+    <linearGradient id="fill" x1="1100" y1="180" x2="1100" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#35C9FF" stop-opacity=".22"/><stop offset="1" stop-color="#35C9FF" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(540 270 -300 600 1060 110)" gradientUnits="userSpaceOnUse"><stop stop-color="#146B92" stop-opacity=".25"/><stop offset="1" stop-color="#08111D" stop-opacity="0"/></radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1440" height="620" rx="28" fill="url(#bg)"/>
+  <rect width="1440" height="620" rx="28" fill="url(#glow)"/>
+  <path d="M0 95H1440" stroke="#8AA4C5" stroke-opacity=".12"/>
+  <circle cx="42" cy="48" r="7" fill="#FF6B7A"/><circle cx="66" cy="48" r="7" fill="#FFB347"/><circle cx="90" cy="48" r="7" fill="#3DDC97"/>
+  <text x="125" y="55" fill="#8FA8C7" font-family="Inter,Segoe UI,sans-serif" font-size="14" letter-spacing="3">INDIAFIN  /  MARKET INTELLIGENCE</text>
+  <text x="82" y="204" fill="#F3F7FF" font-family="Inter,Segoe UI,sans-serif" font-size="66" font-weight="750" letter-spacing="-2">Read the market.</text>
+  <text x="82" y="280" fill="#F3F7FF" font-family="Inter,Segoe UI,sans-serif" font-size="66" font-weight="750" letter-spacing="-2">See the signal.</text>
+  <text x="84" y="337" fill="#93A8CF" font-family="Inter,Segoe UI,sans-serif" font-size="20">A live Indian equities dashboard built for curious, data-minded investors.</text>
+  <rect x="83" y="390" width="176" height="48" rx="24" fill="#35C9FF"/>
+  <text x="111" y="420" fill="#06111E" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="700" letter-spacing=".5">OPEN LIVE DASHBOARD  ↗</text>
+  <text x="84" y="500" fill="#6F87A7" font-family="Inter,Segoe UI,sans-serif" font-size="13" letter-spacing="2">NSE WATCHLIST  ·  MOMENTUM  ·  VOLATILITY  ·  CORRELATION</text>
+  <rect x="702" y="127" width="668" height="414" rx="20" fill="#091321" fill-opacity=".86" stroke="#6A8DB8" stroke-opacity=".24"/>
+  <text x="739" y="169" fill="#E7EEF9" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="650" letter-spacing="1.5">MARKET PULSE</text>
+  <circle cx="1314" cy="162" r="5" fill="#3DDC97"/><text x="1327" y="167" fill="#76CFAE" font-family="Inter,Segoe UI,sans-serif" font-size="11">LIVE</text>
+  <text x="739" y="228" fill="#8EA4C1" font-family="Inter,Segoe UI,sans-serif" font-size="12">RELIANCE  ·  NSE</text>
+  <text x="739" y="270" fill="#F2F7FF" font-family="Inter,Segoe UI,sans-serif" font-size="32" font-weight="700">₹1,428.60</text>
+  <text x="916" y="269" fill="#3DDC97" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="650">↗  +1.84%</text>
+  <path d="M739 314H1333M739 365H1333M739 416H1333M739 467H1333" stroke="#748BA8" stroke-opacity=".14" stroke-dasharray="4 7"/>
+  <path d="M739 320C774 329 788 301 817 313C845 325 862 352 892 339C922 326 935 292 964 300C993 308 1007 337 1036 322C1064 307 1087 274 1114 290C1140 306 1153 335 1181 316C1209 297 1224 252 1250 265C1277 278 1289 301 1316 278C1325 270 1330 258 1337 246" stroke="#35C9FF" stroke-opacity=".22" stroke-width="15" filter="url(#blur)"/>
+  <path d="M739 320C774 329 788 301 817 313C845 325 862 352 892 339C922 326 935 292 964 300C993 308 1007 337 1036 322C1064 307 1087 274 1114 290C1140 306 1153 335 1181 316C1209 297 1224 252 1250 265C1277 278 1289 301 1316 278C1325 270 1330 258 1337 246L1337 484L739 484Z" fill="url(#fill)"/>
+  <path d="M739 320C774 329 788 301 817 313C845 325 862 352 892 339C922 326 935 292 964 300C993 308 1007 337 1036 322C1064 307 1087 274 1114 290C1140 306 1153 335 1181 316C1209 297 1224 252 1250 265C1277 278 1289 301 1316 278C1325 270 1330 258 1337 246" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1337" cy="246" r="6" fill="#35C9FF" stroke="#DDF8FF" stroke-width="2"/>
+  <text x="740" y="514" fill="#607894" font-family="Inter,Segoe UI,sans-serif" font-size="10">01 OCT</text><text x="1286" y="514" fill="#607894" font-family="Inter,Segoe UI,sans-serif" font-size="10">28 OCT</text>
+  <text x="1302" y="577" fill="#607894" font-family="Inter,Segoe UI,sans-serif" font-size="10" letter-spacing="2">BUILT IN INDIA  /  POWERED BY DATA</text>
+</svg>
