@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 STOCKS = {
     "Reliance": "RELIANCE.NS",
     "TCS": "TCS.NS",
-    "Zomato": "ETERNAL.NS",
+    "Eternal (Zomato)": "ETERNAL.NS",
     "Infosys": "INFY.NS",
     "HDFC Bank": "HDFCBANK.NS",
     "Adani Ports": "ADANIPORTS.NS",

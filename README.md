@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://indiafin-mf9orp8gbadok3wzmxppj7.streamlit.app/"><strong>↗ Open the live dashboard</strong></a>
+  <a href="https://indiafin.streamlit.app/"><strong>↗ Open the live dashboard</strong></a>
   &nbsp;·&nbsp; Built with Python + Streamlit &nbsp;·&nbsp; Focused on Indian equities
 </p>
 
