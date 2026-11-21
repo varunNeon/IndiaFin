@@ -19,19 +19,32 @@
 
 IndiaFin turns recent price history into a focused, interactive view of momentum, volatility, trading activity, and relationships across a hand-picked Indian equities watchlist. Pick a stock, set the time window, and follow the signals through the charts.
 
+<p align="center">
+  <img src="assets/dashboard-demo.gif" alt="Switching between stocks and time windows in the IndiaFin dashboard" width="100%" />
+</p>
+
 > **For exploration, not investment advice.** Prices are fetched through Yahoo Finance via `yfinance`; availability, timing, and coverage depend on that upstream service. This project is not an exchange feed or a trading system.
 
 ## The market desk
 
+<p align="center">
+  <img src="assets/dashboard-overview.png" alt="IndiaFin overview: price header, metric cards and a candlestick chart with moving averages and volume" width="100%" />
+</p>
+
 | At a glance | What you can explore |
 |:--|:--|
-| **Price & daily move** | Latest close and daily return for the selected stock |
-| **Trend & momentum** | Closing price against 7-day and 30-day moving averages |
-| **Volatility** | Rolling 7-day standard deviation of daily returns |
-| **Trading activity** | Daily reported volume across the selected period |
-| **Cross-stock context** | Correlation matrix of daily returns across the watchlist |
+| **Price & daily move** | Latest close, today's change, and window return with ₹ deltas |
+| **Trend & momentum** | Daily candlesticks with 7- and 30-day moving averages; one MA7 vs MA30 signal used throughout |
+| **Volatility** | Rolling 7-day standard deviation of daily returns against its window average |
+| **Trading activity** | Volume bars coloured by up and down days, on the same date axis as price |
+| **Watchlist overview** | All eight stocks ranked by window return, with sparklines and signals |
+| **Cross-stock context** | Correlation of daily returns for the selected window, on a diverging scale |
 
-The dashboard has a dark, low-glare trading-desk look, with blue and cyan chart lines, green positive movement, and amber secondary signals. The stock selector and 1-, 3-, and 6-month windows are interactive in the app.
+<p align="center">
+  <img src="assets/dashboard-watchlist.png" alt="IndiaFin watchlist table with sparklines and a return correlation heatmap" width="100%" />
+</p>
+
+The stock selector and the 1-, 3- and 6-month windows drive every chart, and the sidebar shows the date of the latest prices.
 
 ## Watchlist
 
@@ -75,10 +88,10 @@ flowchart LR
 | [`app.py`](app.py) | Streamlit interface, filters, insights, and Plotly charts |
 | [`DataCollection.py`](DataCollection.py) | Yahoo Finance retrieval, normalization, and retries |
 | [`Analysis.py`](Analysis.py) | Time-series features and per-ticker analysis |
-| [`streamlit_app.py`](streamlit_app.py) | Streamlit entry point |
+| [`streamlit_app.py`](streamlit_app.py) | List of app URLs for the wake-up job |
 | [`wake_up_streamlit.py`](wake_up_streamlit.py) | Deployment wake-up helper |
 | [`.github/workflows/keep_alive.yml`](.github/workflows/keep_alive.yml) | Scheduled GitHub Actions workflow |
-| [`assets/indiafin-hero.svg`](assets/indiafin-hero.svg) | Custom dashboard-inspired README artwork |
+| [`assets/`](assets/) | README artwork, dashboard screenshots and demo GIF |
 
 </details>
 
@@ -116,7 +129,7 @@ Streamlit prints a local URL (usually `http://localhost:8501`). Market data is r
 - [ ] Download selected chart data as CSV
 - [ ] Add sector tags and sector-level comparison
 - [ ] Let users compare two tickers on a normalized return chart
-- [ ] Add a clear data freshness timestamp
+- [x] Add a clear data freshness timestamp
 
 ---
 
