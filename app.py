@@ -89,8 +89,13 @@ st.markdown(
     font-size: 0.72rem !important; font-weight: 700;
   }}
   [data-testid="stMetricValue"] {{
-    color: #f5f8ff; font-weight: 800; font-size: 1.55rem !important;
+    color: #f5f8ff; font-weight: 800; font-size: clamp(1.1rem, 1.7vw, 1.55rem) !important;
     font-variant-numeric: tabular-nums;
+  }}
+  /* Let values, labels and deltas wrap instead of truncating in narrow cards. */
+  [data-testid="stMetric"] div,
+  [data-testid="stMetric"] p {{
+    overflow: visible !important; text-overflow: clip !important; white-space: normal !important;
   }}
 
   .section-title {{
